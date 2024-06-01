@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi reina💜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FELIZ 6 MESES!!</h1>
+        <div class="photos">
+            <img src="tu_imagen1.jpeg" alt="Foto 1 de nosotros" class="thumbnail" onclick="openModal('tu_imagen1.jpeg')">
+            <img src="tu_imagen2.jpeg" alt="Foto 2 de nosotros" class="thumbnail" onclick="openModal('tu_imagen2.jpeg')">
+            <img src="tu_imagen3.jpeg" alt="Foto 3 de nosotros" class="thumbnail" onclick="openModal('tu_imagen3.jpeg')">
+            <img src="tu_imagen4.jpeg" alt="Foto 4 de nosotros" class="thumbnail" onclick="openModal('tu_imagen4.jpeg')">
+        </div>
+        <div class="text">
+            <p>Que decirte que no sepas ya..., hace ya 6 meses que empezamos a escribir nuestra historia, llegaste a mi vida de manera repentina pero demostrando querer quedarte haciéndome feliz todos los días desde que te conocí, y aunque sabíamos que era difícil decidimos continuar con ello por muchas piedras que nos encontráramos en el camino, y aquí estamos hoy haciendo medio año juntos.
+                Aunque sabes que no soy de escribir textos quería decirte que eres magnífica en todos los sentidos por como eres, por como me tratas, eres magnífica por que siempre das todo por sacarme una sonrisa y nunca te das por vencida por muy difícil que sea, por estar ahí en todos los momentos incluidos los que no son tan buenos.
+                Has conseguido todo en mi vida, has conseguido que mis hermanos te acepten y les caigas bien, has conseguido que mis padres te quieran y me pregunten por ti o si vas a venir el fin de semana, lo has conseguido por como eres y por que eres especial para mi y para todos.
+                Te quiero muchísimo reina💜</p>
+        </div>
+        <div class="videos">
+            <video controls class="video">
+                <source src="tu_video1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <video controls class="video">
+                <source src="tu_video2.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <div class="music">
+            <img src="album_cover.jpg" alt="Album cover" class="thumbnail" id="albumCover" onclick="toggleMusic()">
+            <p>Esta canción la he escogido porque lleva tu nombre y apellidos, me recuerda a todos los momentos especiales que hemos pasado juntos. Cada vez que la escucho, pienso en ti y en cómo has hecho mi vida más feliz. Eres lo más bonito de este mundo; TE AMO REINA💜</p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <audio id="backgroundMusic" src="tu_cancion.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
